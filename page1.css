@@ -1,0 +1,45 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sue Ellen Francisco', sans-serif;
+    font-size: 24px;
+}
+main {
+    height: 100vh;
+    background-color: #FFC8DD;
+    padding: 50px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .gif img{
+        height: 50vh;
+        width: auto;
+        border: 10px;
+    }
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+    .button {
+        display: flex;
+        width: 70px;
+        height: 30px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background-color: #CDB4DB;
+        cursor: pointer;
+        border-radius: 10px;
+        transition: 0.3s ease-in-out, font-size 0s;
+        &:hover {
+            filter: brightness(90%);
+            transform: scale(1.1);
+        }
+    }
+}

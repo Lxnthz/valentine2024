@@ -1,0 +1,107 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sue Ellen Francisco', sans-serif;
+}
+main {
+    height: 100vh;
+    background-color: #FFC8DD;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    .question {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .image img {
+            width: 250px;
+            position: relative;
+            object-fit: cover;
+        }
+        .image {
+            display: flex;
+            justify-content: center;
+        }
+        .show {
+            animation: show 5000ms ease-in-out;
+        }
+        .show2 {
+            animation: show 7000ms ease-in-out;
+        }
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            button {
+                border: none;
+                padding: 5px 10px;
+                font-size: 20px;
+                transition: .3s ease-in-out;
+                border-radius: 10px;
+            }
+            button:hover {
+                transform: scale(1.1);
+            }
+        }
+        .btn {
+            display: flex;
+            gap: 20px;
+            a {
+                text-decoration: none;
+                color: #000;
+            }
+            .button {
+                display: flex;
+                width: 70px;
+                height: 30px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                border: none;
+                background-color: #CDB4DB;
+                cursor: pointer;
+                border-radius: 10px;
+                transition: 0.3s ease-in-out, font-size 0s;
+                &:hover {
+                    filter: brightness(90%);
+                    transform: scale(1.1);
+                }
+            }
+            .button-run {
+                display: flex;
+                width: 70px;
+                height: 30px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                border: none;
+                background-color: #CDB4DB;
+                border-radius: 10px;
+                transition: 0.3s ease-in-out, font-size 0s;
+                &:hover{
+                    transform: translateX(250px);
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}
+
+@keyframes show {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes show2 {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+}
