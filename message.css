@@ -6,7 +6,6 @@
     font-family: 'Sue Ellen Francisco', sans-serif;
 }
 main {
-    height: 100vh;
     min-height: 100vh;
     background-color: #FFC8DD;
     padding: 50px;
@@ -56,7 +55,6 @@ main {
     background-color: #FFAFCC;
     padding: 10px;
     border-radius: 10px;
-    min-height: 250px;
     animation: show 5000ms ease-in-out;
 }
 
@@ -69,7 +67,7 @@ h2 {
     font-size: 50px;
 }
 p {
-    font-size: 26px;
+    font-size: 20px;
 }
 .btn {
     transform: scale(1.2);
