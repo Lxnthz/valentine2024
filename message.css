@@ -4,7 +4,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Sue Ellen Francisco', sans-serif;
-    overflow: hidden;
 }
 main {
     height: 100vh;
@@ -25,6 +24,7 @@ main {
 .btn {
     display: flex;
     gap: 20px;
+    animation: show 5000ms ease-in-out;
     a {
         text-decoration: none;
         color: #000;
@@ -57,4 +57,10 @@ main {
     padding: 10px;
     border-radius: 10px;
     min-height: 250px;
+    animation: show 5000ms ease-in-out;
+}
+
+@keyframes show {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
